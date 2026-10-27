@@ -3,53 +3,43 @@
    Что здесь пишем: селекторы, комментарии, сброс отступов, базовые правила для a, img, списков
    ========================================================= */
 
-/* Размеры считаем вместе с padding и border */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+html {
+   scroll-behavior: smooth;
 }
 
-/* Сбрасываем стандартные отступы браузера */
 body,
 h1,
 h2,
 h3,
-h4,
 p,
 figure,
-blockquote,
 dl,
 dd,
 ul,
 ol,
 fieldset,
 legend {
-  margin: 0;
-  padding: 0;
+   margin: 0;
+   padding: 0;
 }
 
-/* Убираем маркеры только у списков с классом (меню, теги, сетки) */
 ul[class],
 ol[class] {
-  list-style: none;
+   list-style: none;
 }
 
-/* Ссылка берёт цвет родителя, без подчёркивания */
 a {
-  color: inherit;
-  text-decoration: none;
+   color: inherit;
+   text-decoration: none;
 }
 
-/* Убираем рамку fieldset; min-width: 0 не даёт ему распирать сетку */
 fieldset {
-  min-width: 0;
-  border: 0;
+   min-width: 0;
+   border: 0;
 }
 
-/* Картинка не вылезает за контейнер и сохраняет пропорции */
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+   display: block;
+   max-width: 100%;
+   height: auto;
 }
